@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>کافی شاپ</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./image/fav-icon.png">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="icon" href="./public/image/fav-icon.png">
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
@@ -256,8 +256,7 @@
     </svg>
 
 <!-- header desktop -->
-<header
-        class=" z-50 w-[97%] p-5 lg:w-[90%] h-24 mx-auto xl:p-10 py-5 hidden md:flex items-center fixed top-9 left-0 right-0 bg-black/50  rounded-3xl backdrop-blur-sm">
+<header class=" z-50 w-[97%] p-5 lg:w-[90%] h-24 mx-auto xl:p-10 py-5 hidden md:flex items-center fixed top-9 left-0 right-0 bg-black/50  rounded-3xl backdrop-blur-sm">
         <div class="w-full flex items-center justify-between">
 
             <!-- logo & menu -->
@@ -299,7 +298,7 @@
 
                     <!-- cart icon wrapper -->
                     <div class="py-3 relative group cursor-pointer">
-                        <a href="./pages/cartPage.html">
+                        <a href="./public/pages/cartPage.html">
                             <svg class="w-8 h-8 ">
                                 <use href="#shoping-cart"></use>
                             </svg>
@@ -312,7 +311,7 @@
                             <!-- top box -->
                             <div class="flex items-center justify-between">
                                 <span class="font-DanaMedium text-gray-300 text-sm tracking-tighter">3 مورد</span>
-                                <a href="./pages/cartPage.html" class="flex items-center">
+                                <a href="./public/pages/cartPage.html" class="flex items-center">
                                     <span class="text-orange-300 font-DanaMedium text-xs tracking-tighter">مشاهده سبد خرید</span>
                                     <svg class="w-5 h-5 stroke-none fill-orange-300 ">
                                         <use href="#chevron-left"></use>
@@ -325,7 +324,7 @@
 
                                 <div class="flex items-center justify-between ">
                                     <div>
-                                        <img src="./image/products/p2.png" class="w-40">
+                                        <img src="./public/image/products/p2.png" class="w-40">
                                     </div>
                                     <div class="max-w-64 my-6 font-DanaMedium ">
                                         <h5 class="text-zinc-700 dark:text-white text-lg mb-6 line-clamp-2">قهوه اسپرسو
@@ -341,7 +340,7 @@
 
                                 <div class="flex items-center justify-between ">
                                     <div>
-                                        <img src="./image/products/p1.png" class="w-40">
+                                        <img src="./public/image/products/p1.png" class="w-40">
                                     </div>
                                     <div class="max-w-64 my-6 font-DanaMedium ">
                                         <h5 class="text-zinc-700 dark:text-white text-lg mb-6 line-clamp-2">قهوه اسپرسو
@@ -357,7 +356,7 @@
 
                                 <div class="flex items-center justify-between ">
                                     <div>
-                                        <img src="./image/products/p1.png" class="w-40">
+                                        <img src="./public/image/products/p1.png" class="w-40">
                                     </div>
                                     <div class="max-w-64 my-6 font-DanaMedium ">
                                         <h5 class="text-zinc-700 dark:text-white text-lg mb-6 line-clamp-2">قهوه اسپرسو
@@ -441,13 +440,13 @@
                 <span class="w-px h-14 bg-white/20"></span>
                 <!-- logn in & sign in -->
                 <div>
-                    <div class="flex items-center justify-center gap-x-2.5 tracking-tightest" href="#">
+                    <div class="flex items-center justify-center gap-x-2.5 tracking-tightest" href="./public/pages/loginPage.html">
                         <svg class="w-8 h-8">
                             <use href="#arow-left-rectangle"></use>
                         </svg>
-                        <a href="./pages/loginPage.html" class="text-xl h-8 hidden xl:inline-block">ورود</a>
+                        <a href="./public/pages/loginPage.html" class="text-xl h-8 hidden xl:inline-block">ورود</a>
                         <span class="hidden xl:inline-block">|</span>
-                        <a href="./pages/signupPage.html" class="text-xl h-8 hidden xl:inline-block">ثبت نام</a>
+                        <a href="./public/pages/signupPage.html" class="text-xl h-8 hidden xl:inline-block">ثبت نام</a>
 
                         <!-- user account -->
                         <a class="hidden flex items-center justify-center gap-x-2" href="#">
@@ -482,7 +481,7 @@
 
                 <!-- logo & logo type -->
                 <div class="flex items-center gap-x-4">
-                    <img src="./image/app-logo.png" class="w-10 h-10" alt="">
+                    <img src="./public/image/app-logo.png" class="w-10 h-10" alt="">
                     <svg class="w-24 h-10 text-orange-300">
                         <use href="#logo-type"></use>
                     </svg>
@@ -580,9 +579,9 @@
                         <svg class=" w-5 h-5 ">
                             <use href="#arow-left-rectangle"></use>
                         </svg>
-                        <a href="./pages/loginPage.html">ورود</a>
+                        <a href="./public/pages/loginPage.html">ورود</a>
                         <span>|</span>
-                        <a href="./pages/signupPage.html">ثبت نام</a>
+                        <a href="./public/pages/signupPage.html">ثبت نام</a>
                     </div>
 
                     <!-- theme lite & dark -->
@@ -606,7 +605,7 @@
                     </div>
 
                     <!-- cart shopp -->
-                    <a class="inline-flex items-center gap-x-2" href="./pages/cartPage.html">
+                    <a class="inline-flex items-center gap-x-2" href="./public/pages/cartPage.html">
                         <svg class=" w-5 h-5 ">
                             <use href="#shoping-cart"></use>
                         </svg>
@@ -649,7 +648,7 @@
             <div class="child:pb-5 child:border-b dark:child:border-b-white/10 max-h-[725px] overflow-auto">
                 <div class="flex items-center justify-between mt-5">
                     <div>
-                        <img src="./image/products/p2.png" class="w-40">
+                        <img src="./public/image/products/p2.png" class="w-40">
                     </div>
                     <div class="max-w-64  font-DanaMedium ">
                         <h5 class="text-zinc-700 dark:text-white text-sm mb-2 line-clamp-2">قهوه اسپرسو
@@ -663,7 +662,7 @@
                 </div>
                 <div class="flex items-center justify-between ">
                     <div>
-                        <img src="./image/products/p1.png" class="w-40">
+                        <img src="./public/image/products/p1.png" class="w-40">
                     </div>
                     <div class="max-w-64 mt-6 font-DanaMedium ">
                         <h5 class="text-zinc-700 dark:text-white text-sm mb-2 line-clamp-2">قهوه اسپرسو
@@ -677,7 +676,7 @@
                 </div>
                 <div class="flex items-center justify-between ">
                     <div>
-                        <img src="./image/products/p3.png" class="w-40">
+                        <img src="./public/image/products/p3.png" class="w-40">
                     </div>
                     <div class="max-w-64 mt-6 font-DanaMedium ">
                         <h5 class="text-zinc-700 dark:text-white text-sm mb-2 line-clamp-2">قهوه اسپرسو
@@ -691,7 +690,7 @@
                 </div>
                 <div class="flex items-center justify-between ">
                     <div>
-                        <img src="./image/products/p3.png" class="w-40">
+                        <img src="./public/image/products/p3.png" class="w-40">
                     </div>
                     <div class="max-w-64 mt-6 font-DanaMedium ">
                         <h5 class="text-zinc-700 dark:text-white text-sm mb-2 line-clamp-2">قهوه اسپرسو
@@ -705,7 +704,7 @@
                 </div>
                 <div class="flex items-center justify-between ">
                     <div>
-                        <img src="./image/products/p3.png" class="w-40">
+                        <img src="./public/image/products/p3.png" class="w-40">
                     </div>
                     <div class="max-w-64 mt-6 font-DanaMedium ">
                         <h5 class="text-zinc-700 dark:text-white text-sm mb-2 line-clamp-2">قهوه اسپرسو
@@ -719,7 +718,7 @@
                 </div>
                 <div class="flex items-center justify-between ">
                     <div>
-                        <img src="./image/products/p3.png" class="w-40">
+                        <img src="./public/image/products/p3.png" class="w-40">
                     </div>
                     <div class="max-w-64 mt-6 font-DanaMedium ">
                         <h5 class="text-zinc-700 dark:text-white text-sm mb-2 line-clamp-2">قهوه اسپرسو
@@ -838,7 +837,7 @@
                 <div>
                     <!-- img product -->
                     <div class=" flex items-center justify-center">
-                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p4.png" alt="">
+                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p4.png" alt="">
                     </div>
 
                     <!-- content product -->
@@ -901,7 +900,7 @@
                 <div>
                     <!-- img product -->
                     <div class=" flex items-center justify-center relative">
-                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p1.png" alt="">
+                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p1.png" alt="">
                         <span
                             class="absolute top-0 right-0 inline-block py-0.5 px-2.5 xs:py-1 xs:px-3.5 bg-orange-300 text-white dark:text-zinc-700 font-DanaMedium text-base rounded-[100px]">12%</span>
                     </div>
@@ -983,7 +982,7 @@
                 <div>
                     <!-- img product -->
                     <div class=" flex items-center justify-center">
-                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p3.png" alt="">
+                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p3.png" alt="">
                     </div>
 
                     <!-- content product -->
@@ -1046,7 +1045,7 @@
                 <div>
                     <!-- img product -->
                     <div class=" flex items-center justify-center">
-                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p1.png" alt="">
+                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p1.png" alt="">
                     </div>
 
                     <!-- content product -->
@@ -1109,7 +1108,7 @@
                 <div>
                     <!-- img product -->
                     <div class=" flex items-center justify-center">
-                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p2.png" alt="">
+                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p2.png" alt="">
                     </div>
 
                     <!-- content product -->
@@ -1172,7 +1171,7 @@
                 <div>
                     <!-- img product -->
                     <div class=" flex items-center justify-center">
-                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p3.png" alt="">
+                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p3.png" alt="">
                     </div>
 
                     <!-- content product -->
@@ -1235,7 +1234,7 @@
                 <div>
                     <!-- img product -->
                     <div class=" flex items-center justify-center">
-                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p2.png" alt="">
+                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p2.png" alt="">
                     </div>
 
                     <!-- content product -->
@@ -1296,7 +1295,7 @@
                 <div>
                     <!-- img product -->
                     <div class=" relative flex items-center justify-center">
-                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p4.png" alt="">
+                        <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p4.png" alt="">
                         <span
                             class="absolute top-0 right-0 inline-block py-0.5 px-2.5 xs:py-1 xs:px-3.5 bg-orange-300 text-white dark:text-zinc-700 font-DanaMedium text-base rounded-[100px]">12%</span>
                     </div>
@@ -1403,7 +1402,7 @@
 
         <div class="flex flex-col items-center w-[100px] h-[126px] md:w-[200px] md:h-[238px]">
             <a href="#" class="hover:scale-105 transition-transform ">
-                <img src="./image/categories/category1.png" alt="">
+                <img src="./public/image/categories/category1.png" alt="">
             </a>
             <span
                 class="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white mt-1.5 md:mt-2.5 text-center ">قهوه
@@ -1412,7 +1411,7 @@
 
         <div class="flex flex-col items-center w-[100px] h-[126px] md:w-[200px] md:h-[238px]">
             <a href="#" class="hover:scale-105 transition-transform">
-                <img src="./image/categories/category2.png" alt="">
+                <img src="./public/image/categories/category2.png" alt="">
             </a>
             <span
                 class="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white mt-1.5 md:mt-2.5 text-center ">لوازم
@@ -1421,7 +1420,7 @@
 
         <div class="flex flex-col items-center w-[100px] h-[126px] md:w-[200px] md:h-[238px]">
             <a href="#" class="hover:scale-105 transition-transform">
-                <img src="./image/categories/category3.png" alt="">
+                <img src="./public/image/categories/category3.png" alt="">
             </a>
             <span class="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white mt-1.5 md:mt-2.5"> اسپرسو
                 ساز</span>
@@ -1429,7 +1428,7 @@
 
         <div class="flex flex-col items-center w-[100px] h-[126px] md:w-[200px] md:h-[238px]">
             <a href="#" class="hover:scale-105 transition-transform">
-                <img src="./image/categories/category4.png" alt="">
+                <img src="./public/image/categories/category4.png" alt="">
             </a>
             <span class="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white mt-1.5 md:mt-2.5">پک تستر
                 قهوه</span>
@@ -1437,7 +1436,7 @@
 
         <div class="flex flex-col items-center w-[100px] h-[126px] md:w-[200px] md:h-[238px]">
             <a href="#" class="hover:scale-105 transition-transform">
-                <img src="./image/categories/category5.png" alt="">
+                <img src="./public/image/categories/category5.png" alt="">
             </a>
             <span class="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white mt-1.5 md:mt-2.5">قهوه
                 ترک</span>
@@ -1482,7 +1481,7 @@
         <div>
             <!-- img product -->
             <div class=" flex items-center justify-center">
-                <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p8.png" alt="">
+                <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p8.png" alt="">
             </div>
 
             <!-- content product -->
@@ -1547,7 +1546,7 @@
         <div>
         <!-- img product -->
         <div class=" flex items-center justify-center relative">
-            <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p7.png" alt="">
+            <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p7.png" alt="">
             <span
                 class="absolute top-0 right-0 inline-block py-0.5 px-2.5 xs:py-1 xs:px-3.5 bg-orange-300 text-white dark:text-zinc-700 font-DanaMedium text-base rounded-[100px]">12%</span>
         </div>
@@ -1629,7 +1628,7 @@
         <div class="hidden lg:inline-grid">
         <!-- img product -->
         <div class=" flex items-center justify-center">
-            <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p6.png" alt="">
+            <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p6.png" alt="">
         </div>
 
         <!-- content product -->
@@ -1692,7 +1691,7 @@
         <div class="hidden md:inline-grid">
         <!-- img product -->
         <div class=" flex items-center justify-center">
-            <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./image/products/p5.png" alt="">
+            <img class="w-32 sm:w-64 hover:scale-105 transition-transform" src="./public/image/products/p5.png" alt="">
         </div>
 
         <!-- content product -->
@@ -1761,7 +1760,7 @@
 
             <!-- right content -->
             <div class="flex items-center justify-center gap-x-6">
-                <img src="./image/club/diamond.png" alt="">
+                <img src="./public/image/club/diamond.png" alt="">
                 <div>
                     <h4 class="font-MorabbaBold text-xl sm:text-2xl md:text-5xl text-white mb-2">کافی کلاب</h4>
                     <span class="font-MorabbaLight text-[17px] md:text-2xl text-white ">میدونستی میتونی با امتیاز هات قهوه بگیری ؟</span>
@@ -1856,7 +1855,7 @@
                 <!-- img div -->
                 <div class="relative rounded-2xl rounded-bl-4xl overflow-hidden">
 
-                <img class=" w-[253px] h-[130px] sm:w-[280px] sm:h-[186px] object-cover" src="./image/blogs/blog-1.png" alt="">
+                <img class=" w-[253px] h-[130px] sm:w-[280px] sm:h-[186px] object-cover" src="./public/image/blogs/blog-1.png" alt="">
 
                 <!-- img hover -->
                 <div class=" absolute  inset-0  flex items-center justify-center bg-gradient-to-r from-orange-200/80 to-orange-300/80  h-[130px] sm:w-[280px] sm:h-[186px] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all" >
@@ -1873,7 +1872,7 @@
             <!-- content box 1 -->
             <div class="flex flex-col sm:flex-row sm:items-center justify-around sm:justify-between gap-x-5 w-full sm:mt-4">
                 <!-- title -->
-                <a href="./pages/content-arabica.html" class="inline-block font-DanaMedium sm:font-DanaRegular text-base sm:text-lg text-zinc-700 dark:text-white md:w-[204px] line-clamp-2" target="_blank">تاریخچه قهوه ی خوش طعم عربیکا</a>
+                <a href="./public/pages/content-arabica.html" class="inline-block font-DanaMedium sm:font-DanaRegular text-base sm:text-lg text-zinc-700 dark:text-white md:w-[204px] line-clamp-2" target="_blank">تاریخچه قهوه ی خوش طعم عربیکا</a>
                 
                 <!-- line between -->
                 <span class="inline-block w-full h-[1px] sm:w-[1px] sm:h-[61px] bg-gray-100 dark:bg-white/10 "></span>
@@ -1906,7 +1905,7 @@
             <!-- img div -->
             <div class="relative rounded-2xl rounded-bl-4xl overflow-hidden">
 
-                <img class=" w-[253px] h-[130px] sm:w-[280px] sm:h-[186px] object-cover" src="./image/blogs/blog-2.png" alt="">
+                <img class=" w-[253px] h-[130px] sm:w-[280px] sm:h-[186px] object-cover" src="./public/image/blogs/blog-2.png" alt="">
 
                 <!-- img hover -->
                 <div class=" absolute  inset-0  flex items-center justify-center bg-gradient-to-r from-orange-200/80 to-orange-300/80  h-[130px] sm:w-[280px] sm:h-[186px] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all" >
@@ -1923,7 +1922,7 @@
             <!-- content box 2 -->
             <div class="flex flex-col sm:flex-row sm:items-center justify-around sm:justify-between gap-x-5 w-full sm:mt-4">
                 <!-- title -->
-                <a href="./pages/content-robosta.html" class="inline-block font-DanaMedium sm:font-DanaRegular text-base sm:text-lg text-zinc-700 dark:text-white md:w-[204px] line-clamp-2" target="_blank">از طعم روبوستا خوشت میاد؟! پس اینو بخون</a>
+                <a href="./public/pages/content-robosta.html" class="inline-block font-DanaMedium sm:font-DanaRegular text-base sm:text-lg text-zinc-700 dark:text-white md:w-[204px] line-clamp-2" target="_blank">از طعم روبوستا خوشت میاد؟! پس اینو بخون</a>
                 
                 <!-- line between -->
                 <span class="inline-block w-full h-[1px] sm:w-[1px] sm:h-[61px] bg-gray-100 dark:bg-white/10 "></span>
@@ -1956,7 +1955,7 @@
             <!-- img div -->
             <div class="relative rounded-2xl rounded-bl-4xl overflow-hidden">
 
-                <img class=" w-[253px] h-[130px] sm:w-[280px] sm:h-[186px] object-cover" src="./image/blogs/blog-3.png" alt="">
+                <img class=" w-[253px] h-[130px] sm:w-[280px] sm:h-[186px] object-cover" src="./public/image/blogs/blog-3.png" alt="">
 
                 <!-- img hover -->
                 <div class=" absolute  inset-0  flex items-center justify-center bg-gradient-to-r from-orange-200/80 to-orange-300/80  h-[130px] sm:w-[280px] sm:h-[186px] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all" >
@@ -2006,7 +2005,7 @@
             <!-- img div -->
             <div class="relative rounded-2xl rounded-bl-4xl overflow-hidden">
 
-                <img class=" w-[253px] h-[130px] sm:w-[280px] sm:h-[186px] object-cover" src="./image/blogs/blog-4.png" alt="">
+                <img class=" w-[253px] h-[130px] sm:w-[280px] sm:h-[186px] object-cover" src="./public/image/blogs/blog-4.png" alt="">
 
                 <!-- img hover -->
                 <div class=" absolute  inset-0  flex items-center justify-center bg-gradient-to-r from-orange-200/80 to-orange-300/80  h-[130px] sm:w-[280px] sm:h-[186px] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all" >
@@ -2061,7 +2060,7 @@
 
                 <!-- right side image -->
                 <div class="flex justify-center w-full sm:w-[300px]">
-                    <img class=" shrink-0 w-[298px]" src="./image/contact.png" alt="">
+                    <img class=" shrink-0 w-[298px]" src="./public/image/contact.png" alt="">
                 </div>
 
                 <!-- left side content -->
@@ -2231,7 +2230,7 @@
                         <svg class="shrink-0 w-6 h-6">
                             <use href="#map"></use>
                         </svg>
-                        <span class="text-base md:text-lg ">بلوار دانشجو دانشکده فنی و حرفه ای خوارزمی صبحان بخشی عباسی رضایی</span>
+                        <span class="text-base md:text-lg ">همدان-ملایر-روبروی بیمارستان امام حسین(ع)-دانشکده خوارزمی-طبقه دوم</span>
                         
                     </span>
 
@@ -2243,7 +2242,7 @@
                             <svg class="w-6 h-6">
                                 <use href="#sms"></use>
                             </svg> 
-                            ali.bakhshi021.01@gmail.com
+                            alii@gmail.com
                         </a>
 
                         <!-- phone -->
@@ -2252,10 +2251,10 @@
                             <svg class="w-[22px] h-[22px]">
                                 <use href="#phone2"></use>
                             </svg> 
-                                09930426002
+                                09121781133
                             </a>
                             <a class=" hover:text-orange-300 transition-colors text-base md:text-lg font-DanaRegular" href="tel:02125461894"> 
-                                09339257866
+                                021-25461894
                             </a>
                         </div>
                         
@@ -2269,13 +2268,13 @@
                         <svg class=" shrink-0 w-6 h-6 md:w-9 md:h-9">
                             <use href="#instagram"></use>
                         </svg> 
-                        <span class="text-sm sm:text-base md:text-lg">https://t.me/Masih_021_nm</span>
+                        <span class="text-sm sm:text-base md:text-lg">golden-coffee@</span>
                     </a>
                     <a class="mt-10 px-2.5 sm:px-4 py-2.5 xs:px-7 xs:py-2 md:py-1 border border-orange-200 rounded-xl inline-flex items-center justify-center gap-x-1 sm:gap-x-2 text-orange-200 hover:bg-gradient-to-r from-orange-200 to-orange-300 hover:text-zinc-700 "href="#">
                         <svg class=" shrink-0 w-6 h-6 md:w-9 md:h-9">
                             <use href="#telegram"></use>
                         </svg> 
-                        <span class="text-sm sm:text-base md:text-lg">https://t.me/Masih_021_nm</span>
+                        <span class="text-sm sm:text-base md:text-lg">golden-coffee@</span>
                     </a>
                 </div>
             </div>
@@ -2300,7 +2299,7 @@
 </footer>
 
 <!-- <div class="overlay fixed inset-0 w-full h-full bg-black/40 md:hidden z-10"></div>     -->
-<script src="./js/app.js"></script>
+<script src="./public/js/app.js"></script>
 
 </body>
 
